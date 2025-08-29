@@ -1,0 +1,60 @@
+{
+  "name": "WOLF #7",
+  "description": "A pack-hunter designed for coordinated assault tactics. Enhanced with loyalty protocols and team-based combat algorithms. This Common tier Holobot was obtained through Rental Conversion and contains 25 wrapped HOLOS tokens.",
+  "image": "https://holobots.fun/lovable-uploads/46001c5e-b6c6-4c4d-8006-5926b85c13d9.png",
+  "external_url": "https://holobots.fun/holobot/7",
+  "attributes": [
+    {
+      "trait_type": "Model",
+      "value": "WOLF"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Attack",
+      "value": 7,
+      "max_value": 10
+    },
+    {
+      "trait_type": "Defense",
+      "value": 5,
+      "max_value": 10
+    },
+    {
+      "trait_type": "Speed",
+      "value": 8,
+      "max_value": 10
+    },
+    {
+      "trait_type": "Intelligence",
+      "value": 5,
+      "max_value": 10
+    },
+    {
+      "trait_type": "Max Health",
+      "value": 140,
+      "max_value": 250
+    },
+    {
+      "trait_type": "Special Move",
+      "value": "Pack Hunt"
+    },
+    {
+      "trait_type": "Level",
+      "value": 1,
+      "max_value": 50
+    },
+    {
+      "trait_type": "Wrapped HOLOS",
+      "value": 25,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Conversion Type",
+      "value": "Rental Conversion"
+    }
+  ],
+  "background_color": "1a1a2e"
+}

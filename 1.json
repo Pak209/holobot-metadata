@@ -1,0 +1,60 @@
+{
+  "name": "ACE #1",
+  "description": "A versatile combat unit with advanced mobility systems. Uses its speed to evade attacks and gets in position to land the critical hit. This Epic tier Holobot was obtained through Rental Conversion and contains 100 wrapped HOLOS tokens.",
+  "image": "https://holobots.fun/lovable-uploads/7223a5e5-abcb-4911-8436-bddbbd851ae2.png",
+  "external_url": "https://holobots.fun/holobot/1",
+  "attributes": [
+    {
+      "trait_type": "Model",
+      "value": "ACE"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Epic"
+    },
+    {
+      "trait_type": "Attack",
+      "value": 8,
+      "max_value": 10
+    },
+    {
+      "trait_type": "Defense",
+      "value": 6,
+      "max_value": 10
+    },
+    {
+      "trait_type": "Speed",
+      "value": 7,
+      "max_value": 10
+    },
+    {
+      "trait_type": "Intelligence",
+      "value": 5,
+      "max_value": 10
+    },
+    {
+      "trait_type": "Max Health",
+      "value": 150,
+      "max_value": 250
+    },
+    {
+      "trait_type": "Special Move",
+      "value": "1st Strike"
+    },
+    {
+      "trait_type": "Level",
+      "value": 1,
+      "max_value": 50
+    },
+    {
+      "trait_type": "Wrapped HOLOS",
+      "value": 100,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Conversion Type",
+      "value": "Rental Conversion"
+    }
+  ],
+  "background_color": "1a1a2e"
+}

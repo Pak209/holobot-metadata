@@ -1,0 +1,60 @@
+{
+  "name": "ERA #11",
+  "description": "A time-manipulation specialist with chrono-distortion capabilities. Can slow enemies and accelerate ally actions. This Common tier Holobot was obtained through Rental Conversion and contains 25 wrapped HOLOS tokens.",
+  "image": "https://holobots.fun/lovable-uploads/c2cd6b0a-0e49-4ede-9507-e55d05aa608d.png",
+  "external_url": "https://holobots.fun/holobot/11",
+  "attributes": [
+    {
+      "trait_type": "Model",
+      "value": "ERA"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Attack",
+      "value": 4,
+      "max_value": 10
+    },
+    {
+      "trait_type": "Defense",
+      "value": 6,
+      "max_value": 10
+    },
+    {
+      "trait_type": "Speed",
+      "value": 5,
+      "max_value": 10
+    },
+    {
+      "trait_type": "Intelligence",
+      "value": 9,
+      "max_value": 10
+    },
+    {
+      "trait_type": "Max Health",
+      "value": 125,
+      "max_value": 250
+    },
+    {
+      "trait_type": "Special Move",
+      "value": "Time Warp"
+    },
+    {
+      "trait_type": "Level",
+      "value": 1,
+      "max_value": 50
+    },
+    {
+      "trait_type": "Wrapped HOLOS",
+      "value": 25,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Conversion Type",
+      "value": "Rental Conversion"
+    }
+  ],
+  "background_color": "1a1a2e"
+}

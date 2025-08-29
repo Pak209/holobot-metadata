@@ -1,0 +1,60 @@
+{
+  "name": "TORA #10",
+  "description": "A fierce predator model with enhanced hunting algorithms. Features razor-sharp claws and lightning-fast reflexes. This Common tier Holobot was obtained through Rental Conversion and contains 25 wrapped HOLOS tokens.",
+  "image": "https://holobots.fun/lovable-uploads/e79a5ab6-4577-4e0e-a2b9-32cafd91a212.png",
+  "external_url": "https://holobots.fun/holobot/10",
+  "attributes": [
+    {
+      "trait_type": "Model",
+      "value": "TORA"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Attack",
+      "value": 8,
+      "max_value": 10
+    },
+    {
+      "trait_type": "Defense",
+      "value": 5,
+      "max_value": 10
+    },
+    {
+      "trait_type": "Speed",
+      "value": 7,
+      "max_value": 10
+    },
+    {
+      "trait_type": "Intelligence",
+      "value": 5,
+      "max_value": 10
+    },
+    {
+      "trait_type": "Max Health",
+      "value": 135,
+      "max_value": 250
+    },
+    {
+      "trait_type": "Special Move",
+      "value": "Tiger Claw"
+    },
+    {
+      "trait_type": "Level",
+      "value": 1,
+      "max_value": 50
+    },
+    {
+      "trait_type": "Wrapped HOLOS",
+      "value": 25,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Conversion Type",
+      "value": "Rental Conversion"
+    }
+  ],
+  "background_color": "1a1a2e"
+}

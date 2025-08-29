@@ -1,0 +1,60 @@
+{
+  "name": "HARE #9",
+  "description": "The fastest Holobot model with unparalleled agility systems. Specializes in hit-and-run tactics and evasive maneuvers. This Common tier Holobot was obtained through Rental Conversion and contains 25 wrapped HOLOS tokens.",
+  "image": "https://holobots.fun/lovable-uploads/4ad952b3-4337-4120-9542-ed14ca1051d5.png",
+  "external_url": "https://holobots.fun/holobot/9",
+  "attributes": [
+    {
+      "trait_type": "Model",
+      "value": "HARE"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Attack",
+      "value": 6,
+      "max_value": 10
+    },
+    {
+      "trait_type": "Defense",
+      "value": 4,
+      "max_value": 10
+    },
+    {
+      "trait_type": "Speed",
+      "value": 9,
+      "max_value": 10
+    },
+    {
+      "trait_type": "Intelligence",
+      "value": 6,
+      "max_value": 10
+    },
+    {
+      "trait_type": "Max Health",
+      "value": 120,
+      "max_value": 250
+    },
+    {
+      "trait_type": "Special Move",
+      "value": "Rapid Dash"
+    },
+    {
+      "trait_type": "Level",
+      "value": 1,
+      "max_value": 50
+    },
+    {
+      "trait_type": "Wrapped HOLOS",
+      "value": 25,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Conversion Type",
+      "value": "Rental Conversion"
+    }
+  ],
+  "background_color": "1a1a2e"
+}

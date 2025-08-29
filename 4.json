@@ -1,0 +1,60 @@
+{
+  "name": "KEN #4",
+  "description": "A balanced fighter with exceptional martial arts programming. Combines speed, power, and tactical awareness in perfect harmony. This Rare tier Holobot was obtained through Rental Conversion and contains 50 wrapped HOLOS tokens.",
+  "image": "https://holobots.fun/lovable-uploads/58e4110e-07f8-44ab-983e-b6caa5098cc3.png",
+  "external_url": "https://holobots.fun/holobot/4",
+  "attributes": [
+    {
+      "trait_type": "Model",
+      "value": "KEN"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "Attack",
+      "value": 7,
+      "max_value": 10
+    },
+    {
+      "trait_type": "Defense",
+      "value": 6,
+      "max_value": 10
+    },
+    {
+      "trait_type": "Speed",
+      "value": 6,
+      "max_value": 10
+    },
+    {
+      "trait_type": "Intelligence",
+      "value": 6,
+      "max_value": 10
+    },
+    {
+      "trait_type": "Max Health",
+      "value": 160,
+      "max_value": 250
+    },
+    {
+      "trait_type": "Special Move",
+      "value": "Lightning Fist"
+    },
+    {
+      "trait_type": "Level",
+      "value": 1,
+      "max_value": 50
+    },
+    {
+      "trait_type": "Wrapped HOLOS",
+      "value": 50,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Conversion Type",
+      "value": "Rental Conversion"
+    }
+  ],
+  "background_color": "1a1a2e"
+}

@@ -1,0 +1,60 @@
+{
+  "name": "GAMA #8",
+  "description": "An amphibious combat unit with adaptive environmental systems. Excels in wet conditions and uses water-based attacks. This Common tier Holobot was obtained through Rental Conversion and contains 25 wrapped HOLOS tokens.",
+  "image": "https://holobots.fun/lovable-uploads/4af336bd-2825-4faf-9b2c-58cc86354b14.png",
+  "external_url": "https://holobots.fun/holobot/8",
+  "attributes": [
+    {
+      "trait_type": "Model",
+      "value": "GAMA"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Attack",
+      "value": 5,
+      "max_value": 10
+    },
+    {
+      "trait_type": "Defense",
+      "value": 7,
+      "max_value": 10
+    },
+    {
+      "trait_type": "Speed",
+      "value": 6,
+      "max_value": 10
+    },
+    {
+      "trait_type": "Intelligence",
+      "value": 6,
+      "max_value": 10
+    },
+    {
+      "trait_type": "Max Health",
+      "value": 155,
+      "max_value": 250
+    },
+    {
+      "trait_type": "Special Move",
+      "value": "Tidal Wave"
+    },
+    {
+      "trait_type": "Level",
+      "value": 1,
+      "max_value": 50
+    },
+    {
+      "trait_type": "Wrapped HOLOS",
+      "value": 25,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Conversion Type",
+      "value": "Rental Conversion"
+    }
+  ],
+  "background_color": "1a1a2e"
+}

@@ -1,0 +1,60 @@
+{
+  "name": "KURAI #5",
+  "description": "A dark energy manipulator capable of draining enemy power. Specializes in debuffing opponents while strengthening allies. This Rare tier Holobot was obtained through Rental Conversion and contains 50 wrapped HOLOS tokens.",
+  "image": "https://holobots.fun/lovable-uploads/a2ce9d10-b01e-4b86-b52b-74f196b39a6c.png",
+  "external_url": "https://holobots.fun/holobot/5",
+  "attributes": [
+    {
+      "trait_type": "Model",
+      "value": "KURAI"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "Attack",
+      "value": 6,
+      "max_value": 10
+    },
+    {
+      "trait_type": "Defense",
+      "value": 5,
+      "max_value": 10
+    },
+    {
+      "trait_type": "Speed",
+      "value": 5,
+      "max_value": 10
+    },
+    {
+      "trait_type": "Intelligence",
+      "value": 8,
+      "max_value": 10
+    },
+    {
+      "trait_type": "Max Health",
+      "value": 140,
+      "max_value": 250
+    },
+    {
+      "trait_type": "Special Move",
+      "value": "Dark Drain"
+    },
+    {
+      "trait_type": "Level",
+      "value": 1,
+      "max_value": 50
+    },
+    {
+      "trait_type": "Wrapped HOLOS",
+      "value": 50,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Conversion Type",
+      "value": "Rental Conversion"
+    }
+  ],
+  "background_color": "1a1a2e"
+}

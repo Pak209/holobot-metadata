@@ -1,0 +1,60 @@
+{
+  "name": "WAKE #12",
+  "description": "An energy amplification unit that awakens hidden potential. Specializes in buffing allies and disrupting enemy systems. This Common tier Holobot was obtained through Rental Conversion and contains 25 wrapped HOLOS tokens.",
+  "image": "https://holobots.fun/lovable-uploads/e8128616-6ab5-4995-91b8-2989d18a0508.png",
+  "external_url": "https://holobots.fun/holobot/12",
+  "attributes": [
+    {
+      "trait_type": "Model",
+      "value": "WAKE"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Attack",
+      "value": 5,
+      "max_value": 10
+    },
+    {
+      "trait_type": "Defense",
+      "value": 6,
+      "max_value": 10
+    },
+    {
+      "trait_type": "Speed",
+      "value": 6,
+      "max_value": 10
+    },
+    {
+      "trait_type": "Intelligence",
+      "value": 8,
+      "max_value": 10
+    },
+    {
+      "trait_type": "Max Health",
+      "value": 145,
+      "max_value": 250
+    },
+    {
+      "trait_type": "Special Move",
+      "value": "Power Surge"
+    },
+    {
+      "trait_type": "Level",
+      "value": 1,
+      "max_value": 50
+    },
+    {
+      "trait_type": "Wrapped HOLOS",
+      "value": 25,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Conversion Type",
+      "value": "Rental Conversion"
+    }
+  ],
+  "background_color": "1a1a2e"
+}

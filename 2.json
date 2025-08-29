@@ -1,0 +1,60 @@
+{
+  "name": "SHADOW #2",
+  "description": "A stealth specialist designed for reconnaissance and surprise attacks. Masters the art of invisibility and precision strikes. This Epic tier Holobot was obtained through Rental Conversion and contains 100 wrapped HOLOS tokens.",
+  "image": "https://holobots.fun/lovable-uploads/ef60f626-b571-46ba-9d37-6045b020669a.png",
+  "external_url": "https://holobots.fun/holobot/2",
+  "attributes": [
+    {
+      "trait_type": "Model",
+      "value": "SHADOW"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Epic"
+    },
+    {
+      "trait_type": "Attack",
+      "value": 5,
+      "max_value": 10
+    },
+    {
+      "trait_type": "Defense",
+      "value": 7,
+      "max_value": 10
+    },
+    {
+      "trait_type": "Speed",
+      "value": 4,
+      "max_value": 10
+    },
+    {
+      "trait_type": "Intelligence",
+      "value": 9,
+      "max_value": 10
+    },
+    {
+      "trait_type": "Max Health",
+      "value": 170,
+      "max_value": 250
+    },
+    {
+      "trait_type": "Special Move",
+      "value": "Shadow Strike"
+    },
+    {
+      "trait_type": "Level",
+      "value": 1,
+      "max_value": 50
+    },
+    {
+      "trait_type": "Wrapped HOLOS",
+      "value": 100,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Conversion Type",
+      "value": "Rental Conversion"
+    }
+  ],
+  "background_color": "1a1a2e"
+}
