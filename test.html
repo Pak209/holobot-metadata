@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Holobot NFT Metadata & Image Test</title>
+    <meta charset="utf-8">
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 20px; 
+            background: #1a1a2e; 
+            color: white; 
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        .test-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 20px; 
+            margin: 20px 0; 
+        }
+        .nft-test { 
+            background: #16213e; 
+            padding: 20px; 
+            border-radius: 10px; 
+            text-align: center; 
+            border: 2px solid #333;
+        }
+        .nft-test.success { border-color: #52b788; }
+        .nft-test.error { border-color: #e63946; }
+        .nft-image { 
+            width: 150px; 
+            height: 150px; 
+            object-fit: cover; 
+            border-radius: 10px; 
+            margin: 10px 0; 
+            border: 2px solid #333;
+        }
+        .metadata-info { 
+            background: #0f3460; 
+            padding: 10px; 
+            border-radius: 5px; 
+            margin: 10px 0; 
+            text-align: left; 
+            font-size: 12px;
+        }
+        .test-links { 
+            margin: 10px 0; 
+        }
+        .test-links a { 
+            color: #3a86ff; 
+            text-decoration: none; 
+            margin: 0 5px; 
+        }
+        .test-links a:hover { 
+            text-decoration: underline; 
+        }
+        .status { 
+            font-weight: bold; 
+            padding: 5px 10px; 
+            border-radius: 3px; 
+            margin: 5px 0; 
+        }
+        .status.success { background: #52b788; }
+        .status.error { background: #e63946; }
+        .status.loading { background: #f77f00; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🤖 Holobot NFT Metadata & Image Test</h1>
+        <p>This page tests all your NFT metadata and images to ensure they work correctly.</p>
+        
+        <div id="overall-status" class="status loading">Testing...</div>
+        
+        <div class="test-grid" id="test-grid">
+            <!-- Tests will be populated by JavaScript -->
+        </div>
+        
+        <h3>📋 Manual Testing Checklist:</h3>
+        <ul>
+            <li>✅ All metadata URLs return HTTP 200</li>
+            <li>✅ All image URLs return HTTP 200</li>
+            <li>🔄 Test in MetaMask (import NFT with contract address)</li>
+            <li>🔄 Test on OpenSea (check if NFT displays properly)</li>
+            <li>🔄 Test contract tokenURI function</li>
+        </ul>
+        
+        <h3>🔗 Quick Test Links:</h3>
+        <div class="test-links">
+            <a href="https://pak209.github.io/holobot-metadata/1.json" target="_blank">Metadata #1</a>
+            <a href="https://pak209.github.io/holobot-metadata/images/ace.png" target="_blank">ACE Image</a>
+            <a href="https://basescan.org/token/0x4897324dBD199fb8a6029b084d0a5f04136c371E?a=1" target="_blank">BaseScan NFT</a>
+        </div>
+    </div>
+
+    <script>
+        const holobots = [
+            {id: 1, name: "ACE", rarity: "Epic", image: "ace"},
+            {id: 2, name: "SHADOW", rarity: "Epic", image: "shadow"},
+            {id: 3, name: "KUMA", rarity: "Epic", image: "kuma"},
+            {id: 4, name: "KEN", rarity: "Rare", image: "ken"},
+            {id: 5, name: "KURAI", rarity: "Rare", image: "kurai"},
+            {id: 6, name: "TSUIN", rarity: "Rare", image: "tsuin"},
+            {id: 7, name: "WOLF", rarity: "Common", image: "wolf"},
+            {id: 8, name: "GAMA", rarity: "Common", image: "gama"},
+            {id: 9, name: "HARE", rarity: "Common", image: "hare"},
+            {id: 10, name: "TORA", rarity: "Common", image: "tora"},
+            {id: 11, name: "ERA", rarity: "Common", image: "era"},
+            {id: 12, name: "WAKE", rarity: "Common", image: "wake"}
+        ];
+
+        let successCount = 0;
+        let totalTests = holobots.length;
+
+        async function testHolobot(holobot) {
+            const metadataUrl = `https://pak209.github.io/holobot-metadata/${holobot.id}.json`;
+            const imageUrl = `https://pak209.github.io/holobot-metadata/images/${holobot.image}.png`;
+            
+            try {
+                // Test metadata
+                const metadataResponse = await fetch(metadataUrl);
+                const metadata = await metadataResponse.json();
+                
+                // Test image
+                const imageResponse = await fetch(imageUrl, {method: 'HEAD'});
+                
+                const success = metadataResponse.ok && imageResponse.ok;
+                if (success) successCount++;
+                
+                return {
+                    success,
+                    metadata,
+                    metadataStatus: metadataResponse.status,
+                    imageStatus: imageResponse.status,
+                    metadataUrl,
+                    imageUrl
+                };
+            } catch (error) {
+                return {
+                    success: false,
+                    error: error.message,
+                    metadataUrl,
+                    imageUrl
+                };
+            }
+        }
+
+        function createTestCard(holobot, result) {
+            const card = document.createElement('div');
+            card.className = `nft-test ${result.success ? 'success' : 'error'}`;
+            
+            card.innerHTML = `
+                <h3>${holobot.name} #${holobot.id}</h3>
+                <div class="status ${result.success ? 'success' : 'error'}">
+                    ${result.success ? '✅ PASS' : '❌ FAIL'}
+                </div>
+                ${result.success ? `
+                    <img src="${result.imageUrl}" alt="${holobot.name}" class="nft-image" 
+                         onerror="this.style.border='2px solid #e63946'" 
+                         onload="this.style.border='2px solid #52b788'">
+                    <div class="metadata-info">
+                        <strong>Name:</strong> ${result.metadata.name}<br>
+                        <strong>Rarity:</strong> ${holobot.rarity}<br>
+                        <strong>Image:</strong> ✅ Loaded<br>
+                        <strong>Metadata:</strong> ✅ Valid JSON
+                    </div>
+                ` : `
+                    <div class="metadata-info">
+                        <strong>Error:</strong> ${result.error || 'Failed to load'}<br>
+                        <strong>Metadata Status:</strong> ${result.metadataStatus || 'N/A'}<br>
+                        <strong>Image Status:</strong> ${result.imageStatus || 'N/A'}
+                    </div>
+                `}
+                <div class="test-links">
+                    <a href="${result.metadataUrl}" target="_blank">JSON</a>
+                    <a href="${result.imageUrl}" target="_blank">Image</a>
+                </div>
+            `;
+            
+            return card;
+        }
+
+        async function runTests() {
+            const grid = document.getElementById('test-grid');
+            const overallStatus = document.getElementById('overall-status');
+            
+            overallStatus.textContent = 'Testing all NFTs...';
+            
+            for (const holobot of holobots) {
+                const result = await testHolobot(holobot);
+                const card = createTestCard(holobot, result);
+                grid.appendChild(card);
+            }
+            
+            // Update overall status
+            if (successCount === totalTests) {
+                overallStatus.className = 'status success';
+                overallStatus.textContent = `🎉 All ${totalTests} NFTs PASSED! Your metadata and images are working perfectly!`;
+            } else {
+                overallStatus.className = 'status error';
+                overallStatus.textContent = `⚠️ ${successCount}/${totalTests} NFTs passed. Check failed tests above.`;
+            }
+        }
+
+        // Run tests when page loads
+        runTests();
+    </script>
+</body>
+</html>
